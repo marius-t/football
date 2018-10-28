@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #FFF; }
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+  padding: 0; }
+
+.wrapper {
+  width: 40%;
+  padding: 5px 10px;
+  background: url(../assets/pitch-bg.png) repeat;
+  border-radius: 5px;
+  min-width: 320px;
+  min-height: 520px; }
+
+.field {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin: 10px auto;
+  padding: 0 0 120% 0;
+  border: 2px solid #fff;
+  min-height: 520px;
+  box-sizing: border-box; }
+
+.middle, .semi_top, .semi_bottom,
+.semi_top2, .semi_bottom2,
+.penalty, .player {
+  position: absolute; }
+
+.middle {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  border: 1px solid #fff; }
+
+.middle::before {
+  content: '';
+  padding: 0 12% 24% 12%;
+  position: absolute;
+  border: 2px solid #FFF;
+  border-radius: 100%;
+  margin-top: -12%;
+  margin-left: -12%; }
+
+.semi_top, .semi_bottom {
+  width: 30%;
+  height: 8%;
+  left: 35%;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff; }
+
+.semi_top2, .semi_bottom2 {
+  width: 65%;
+  height: 18%;
+  left: 17%;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff; }
+
+.semi_top, .semi_top2 {
+  top: 0;
+  border-bottom: 2px solid #fff; }
+
+.semi_bottom {
+  top: 92%;
+  border-top: 2px solid #fff; }
+
+.semi_bottom2 {
+  top: 82%;
+  border-top: 2px solid #fff; }
+
+.penalty {
+  width: 2%;
+  height: 1.5%;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  left: 49%; }
+  .penalty.top {
+    top: 10%; }
+  .penalty.middle {
+    top: 49.5%; }
+  .penalty.bottom {
+    top: 89%; }
+
+.player {
+  width: 10%;
+  height: 9%;
+  display: block;
+  background: url(../assets/player-shirt.png) no-repeat;
+  background-size: 100% 100%; }
+  .player > span {
+    width: 200%;
+    font-size: 12pt;
+    padding: 110% 0 0 0;
+    margin: 0 0 0 -100%;
+    position: absolute;
+    color: white;
+    text-shadow: 0px 2px 1px black; }
+  .player.gk {
+    top: 91%;
+    left: 45%; }
+  .player.def {
+    top: 75%; }
+  .player.mdl {
+    top: 48%; }
+  .player.off {
+    top: 30%; }
+  .player.off1 {
+    top: 15%; }
+  .player.left {
+    left: 7%; }
+  .player.c1 {
+    left: 32%; }
+  .player.c2 {
+    left: 57%; }
+  .player.ct {
+    left: 45%; }
+  .player.rght {
+    left: 82%; }
